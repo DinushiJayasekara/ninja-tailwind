@@ -13,12 +13,19 @@
     <div class="grid md:grid-cols-6">
         <div class="md:col-span-1 md:flex md:justify-end">
             <nav class="text-right">
-                <div>
+                <div class="flex justify-between items-center">
                     <h1 class="font-bold uppercase p-4 border-b border-gray-100">
                         <a href="/" class="hover:text-gray-700">Food Ninja</a>
                     </h1>
+                    <div class="px-4 cursor-pointer md:hidden" id="burger">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </div>
                 </div>
-                <ul class="text-sm mt-6">
+                <ul class="text-sm mt-6 hidden md:block" id="menu">
                     <li class="text-gray-700 font-bold py-1">
                         <a href="#" class="px-4 flex justify-start border-r-4 border-primary">
                             <svg class="w-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"
@@ -59,8 +66,11 @@
         <!-- Main Content -->
         <main class="px-16 py-6 bg-gray-100 md:col-span-5">
             <div class="flex justify-center md:justify-end">
-                <a href="#" class="btn text-primary md:border-2 border-primary hover:bg-primary hover:text-white">Log in</a>
-                <a href="#" class="btn text-primary ml-2 md:border-2 border-primary hover:bg-primary hover:text-white">Sign up</a>
+                <a href="#" class="btn text-primary md:border-2 border-primary hover:bg-primary hover:text-white">Log
+                    in</a>
+                <a href="#"
+                    class="btn text-primary ml-2 md:border-2 border-primary hover:bg-primary hover:text-white">Sign
+                    up</a>
             </div>
 
             <header>
@@ -134,6 +144,7 @@
 
     </div>
 
+    <script src="index.js"></script>
 </body>
 
 </html>
